@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Direct Fly | Travel Schedule</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="Media/DirectFly LOGO V1-1.png">
+            </a>
+
+        </div>
+    </header>
+    <main>
+        <section id="Main">
+            <div class="container">
+                <h1 class="titulo"> Planifica tus vuelos</h1>
+                <h3 class="bajada"> Direct Fly | Travel Schedule es un sistema que te permite agregar, modificar,
+                    actulizar o eliminar tu planificación de vuelos en un determinado periodo de tiempo.</h3>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <form onsubmit="addData(event)" id="formulario">
+            <input type="text" id="destino" placeholder="Ingrese su destino">
+            <input type="text" id="vuelo" placeholder="Ingrese la fecha y detalles">
+            <div>
+                <input type="submit" value="Agregar" id="add-btn">
+                <input type="submit" value="Editar" id="edit-btn" style="display: none;">
+
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="listado">
+            <h2>Itinerario</h2>
+            <hr>
+        </div>
+        <ul></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
