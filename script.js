@@ -69,3 +69,15 @@ function deleteData(index) {
     showData();
 }
 
+function addData(event) {
+    event.preventDefault();
+    let destino = document.querySelector('#destino').value;
+    let vuelo = document.querySelector('#vuelo').value;
+  
+    if (destino === "" || vuelo === "") {
+      alert("Por favor, completa todos los campos");
+      return;
+    }
+  }
+  
+
