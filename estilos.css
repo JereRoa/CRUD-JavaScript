@@ -130,6 +130,11 @@ ul {
   padding-bottom: 15px;
 }
 
+.color-df {
+  color: #00AFD1;
+  font-weight: bold;
+}
+
 #formulario {
     display: flex;
     flex-direction: column;
