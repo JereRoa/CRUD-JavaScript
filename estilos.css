@@ -46,6 +46,15 @@ nav a:hover {
     color: #FFCF00;
 }
 
+.inse {
+  background-color: #FFCF00;
+}
+
+.inse:hover {
+  background-color: aliceblue;
+  color: #00AFD1;
+}
+
 button {
     font-weight: bold;
     border-radius: 5px;
@@ -115,6 +124,12 @@ ul {
     margin: auto;
 }
 
+.titulodos {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 #formulario {
     display: flex;
     flex-direction: column;
@@ -122,6 +137,10 @@ ul {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .tform {
+    text-align: center;
   }
   
   label {
@@ -159,6 +178,13 @@ ul {
   #edit-btn:hover {
     background-color: #FFCF00;
   }
+
+
+  footer img {
+    width: 80px;
+    height: 50px;
+    background-color: #00AFD1;
+}
 
 
 @media (min-width: 720px) {

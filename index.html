@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Última versión del CSS minificado -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Última versión del JS minificado -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="Media/DirectFly LOGO V1-1.png" type="image/x-icon">
     <title>Direct Fly | Travel Schedule</title>
@@ -15,6 +21,9 @@
             <a href="#" class="logo">
                 <img src="Media/DirectFly LOGO V1-1.png">
             </a>
+            <nav>
+                <button class="inse"> Iniciar Sesión</button>
+            </nav>
 
         </div>
     </header>
@@ -28,6 +37,7 @@
         </section>
     </main>
     <div class="container">
+        <h2 class="tform">Ingrese la información solicitada de sus próximos viajes</h2>
         <form onsubmit="addData(event)" id="formulario">
             <input type="text" id="destino" placeholder="Ingrese su destino">
             <input type="text" id="vuelo" placeholder="Ingrese la fecha y detalles">
@@ -40,11 +50,73 @@
     </div>
     <div class="container">
         <div class="listado">
-            <h2>Itinerario</h2>
+            <h2 class="titulodos">Itinerario</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sit alias eaque asperiores error ipsam et
+                minima omnis deleniti, ratione laborum beatae aliquid nemo iusto incidunt, excepturi assumenda inventore
+                tempore.</p>
         </div>
         <hr>
         <ul></ul>
+        <hr>
     </div>
+    <footer class="container-fluid bg-light">
+        <div class="row p-5 text-dark">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <img src="Media/DirectFly LOGO V1-1.png">
+                <span>Direct Fly | Travel Schedule</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam rerum doloribus rem quod
+                    nisi illum et cupiditate, sint quisquam ullam magnam, illo quos optio est molestiae eos, maxime
+                    suscipit?</p>
+                <br>
+                <p>&copy; Direct Fly | Travel Schedule</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h2">Paquetes</p>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">All inclusive</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Vuelo sin escalas</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Traslado ida y vuelta</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Solo estadía</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">+ Info</p>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Términos y Condiciones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Política de privacidad</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Política de reembolso</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Trabaja con nosotros</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Encuétranos también en</p>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Instagram</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Facebook</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">Twitch</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-dark" href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
