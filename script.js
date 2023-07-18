@@ -35,32 +35,34 @@ function addData(event){
     document.querySelector('#vuelo').value = "";
 }
 
-function editData(index){
+function editData(index) {
     document.getElementById('add-btn').style.display = 'none';
     document.getElementById('edit-btn').style.display = 'block';
-
+  
     let flysList;
-    if(localStorage.getItem("flysList")=== null){
-        flysList = []
+    if (localStorage.getItem("flysList") === null) {
+      flysList = [];
     } else {
-        flysList = JSON.parse(localStorage.getItem("flysList"))
+      flysList = JSON.parse(localStorage.getItem("flysList"));
     }
+  
     document.querySelector('#destino').value = flysList[index].destino;
     document.querySelector('#vuelo').value = flysList[index].vuelo;
-
-    document.getElementById('edit-btn').onclick = function (){
-        flysList[index].destino = document.querySelector('#destino').value;
-        flysList[index].vuelo = document.querySelector('#vuelo').value;
-
-        localStorage.setItem("flysList", JSON.stringify(flysList));
-        showData();
-        document.querySelector('#destino').value = "";
-        document.querySelector('#vuelo').value = "";
-        
-        document.getElementById('add-btn').style.display = 'block';
-        document.getElementById('edit-btn').style.display = 'none'; 
+  
+    document.getElementById('edit-btn').onclick = function () {
+      flysList[index].destino = document.querySelector('#destino').value;
+      flysList[index].vuelo = document.querySelector('#vuelo').value;
+  
+      localStorage.setItem("flysList", JSON.stringify(flysList));
+      showData();
+      document.querySelector('#destino').value = "";
+      document.querySelector('#vuelo').value = "";
+  
+      document.getElementById('add-btn').style.display = 'block';
+      document.getElementById('edit-btn').style.display = 'none';
     }
-}
+  }
+  
 
 function deleteData(index) {
     let flysList = JSON.parse(localStorage.getItem("flysList"));
@@ -78,6 +80,21 @@ function addData(event) {
       alert("Por favor, completa todos los campos");
       return;
     }
+  
+    let flysList;
+    if (localStorage.getItem("flysList") === null) {
+      flysList = [];
+    } else {
+      flysList = JSON.parse(localStorage.getItem("flysList"));
+    }
+    
+    flysList.push({ destino, vuelo });
+    localStorage.setItem("flysList", JSON.stringify(flysList));
+    showData();
+  
+    document.querySelector('#destino').value = "";
+    document.querySelector('#vuelo').value = "";
   }
+  
   
 
