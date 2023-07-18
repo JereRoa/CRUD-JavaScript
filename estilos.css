@@ -115,6 +115,50 @@ ul {
     margin: auto;
 }
 
+#formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #add-btn {
+    background-color:  #00AFD1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  #add-btn:hover {
+    background-color: #FFCF00;
+  }
+
+  #edit-btn {
+    background-color:  #00AFD1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  #edit-btn:hover {
+    background-color: #FFCF00;
+  }
 
 
 @media (min-width: 720px) {
